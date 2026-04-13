@@ -19,3 +19,16 @@ function getHumanChoice() {
         return getHumanChoice();
     } 
 }
+
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === computerChoice) {
+        draw();
+    } else if (
+        (humanChoice === "rock" && computerChoice === "scissors")
+        (humanChoice === "paper" && computerChoice === "rock")
+        (humanChoice === "scissors" && computerChoice === "paper")) {
+        win();
+    } else {
+        lose();
+    }
+}
