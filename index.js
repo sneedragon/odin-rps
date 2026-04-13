@@ -1,6 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
-let scoreboard = ` Human: ${humanScore}, CPU: ${computerScore}.`
+let scoreboard = `Human: ${humanScore}, CPU: ${computerScore}.`
 
 function getComputerChoice() {
     let rng = Math.random();
@@ -25,8 +25,8 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         gameResult("Draw");
     } else if (
-        (humanChoice === "rock" && computerChoice === "scissors")
-        (humanChoice === "paper" && computerChoice === "rock")
+        (humanChoice === "rock" && computerChoice === "scissors") ||
+        (humanChoice === "paper" && computerChoice === "rock") ||
         (humanChoice === "scissors" && computerChoice === "paper")) {
         humanScore++;
         gameResult("Win");
@@ -37,6 +37,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function gameResult(result) {
+    scoreboard = (`Human: ${humanScore}, CPU: ${computerScore}.`);
     alert(`${result}! ${scoreboard}`);
 }
 
