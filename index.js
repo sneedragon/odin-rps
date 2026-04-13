@@ -39,3 +39,13 @@ function playRound(humanChoice, computerChoice) {
 function gameResult(result) {
     alert(`${result}! ${scoreboard}`);
 }
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        playRound(getHumanChoice(), getComputerChoice());
+    }
+}
+
+/* ---------------------------- */
+
+playGame();
