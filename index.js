@@ -50,3 +50,4 @@ function playGame() {
 /* ---------------------------- */
 
 playGame();
+alert(`Final Score: ${scoreboard}`);
