@@ -23,20 +23,20 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
-        gameResult("Draw");
+        showGameResult("Draw");
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
         (humanChoice === "scissors" && computerChoice === "paper")) {
         humanScore++;
-        gameResult("Win");
+        showGameResult("Win");
     } else {
         computerScore++;
-        gameResult("Lose");
+        showGameResult("Lose");
     }
 }
 
-function gameResult(result) {
+function showGameResult(result) {
     scoreboard = (`Human: ${humanScore}, CPU: ${computerScore}.`);
     alert(`${result}! ${scoreboard}`);
 }
