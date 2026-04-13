@@ -1,9 +1,21 @@
 function getComputerChoice() {
     let rng = Math.random();
     if (rng < 0.33) {
-        return "rock"
+        return "rock";
     } else if (rng < 0.66) {
-        return "paper"
+        return "paper";
     } 
-    return "scissors"
+    return "scissors";
 }
+
+function getHumanChoice() {
+    let choice = prompt("Rock, Paper or Scissors?").toLowerCase();
+    if (choice === "rock" || choice === "paper" || choice === "scissors") {
+        return choice;
+    } else {
+        return getHumanChoice();
+    } 
+}
+
+
+console.log(getHumanChoice());
