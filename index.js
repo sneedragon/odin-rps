@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let rng = Math.random();
     if (rng < 0.33) {
@@ -16,6 +19,3 @@ function getHumanChoice() {
         return getHumanChoice();
     } 
 }
-
-
-console.log(getHumanChoice());
