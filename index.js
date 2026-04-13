@@ -1,5 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
+let scoreboard = ` Human: ${humanScore}, CPU: ${computerScore}.`
 
 function getComputerChoice() {
     let rng = Math.random();
@@ -22,13 +23,19 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
-        draw();
+        gameResult("Draw");
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors")
         (humanChoice === "paper" && computerChoice === "rock")
         (humanChoice === "scissors" && computerChoice === "paper")) {
-        win();
+        humanScore++;
+        gameResult("Win");
     } else {
-        lose();
+        computerScore++;
+        gameResult("Lose");
     }
+}
+
+function gameResult(result) {
+    alert(`${result}! ${scoreboard}`);
 }
