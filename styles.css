@@ -19,3 +19,7 @@ main {
     background-color: rgb(123, 172, 51);
 }
 
+h1 {
+    background-color: grey;
+    flex: 1;
+}
