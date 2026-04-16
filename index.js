@@ -1,6 +1,5 @@
 let humanScore = 0;
 let computerScore = 0;
-let scoreboard = `Human: ${humanScore}, CPU: ${computerScore}.`
 
 function getComputerChoice() {
     let rng = Math.random();
@@ -33,9 +32,14 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+const gameText = document.querySelector(".game-text");
+const scoreText = document.querySelector(".score-text");
+
 function showGameResult(result) {
-    scoreboard = (`Human: ${humanScore}, CPU: ${computerScore}.`);
-    alert(`${result}! ${scoreboard}`);
+    const scoreboard = `Human: ${humanScore}, CPU: ${computerScore}.`;
+    console.log(result);
+    gameText.textContent = `You ${result}!`;
+    scoreText.textContent = `${scoreboard}`;
 }
 
 /* ---------------------------- */
