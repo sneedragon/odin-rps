@@ -63,4 +63,8 @@ button {
     width: 20%;
     height: 8vh;
     margin: 2vh;
+    border-radius: 32px;
+    background-color: rgb(51, 51, 51);
+    border-width: 8px;
+    color: white;
 }
