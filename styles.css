@@ -46,8 +46,21 @@ h1 {
     width: 64vw;
 }
 
+.button-container {
+    width: 64vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
 button {
     font-size: 32px;
     font-family: "Silkscreen", "Roboto", sans-serif;
     font-weight: 900;
+    min-width: 256px;
+    width: 20%;
+    height: 8vh;
+    margin: 2vh;
 }
