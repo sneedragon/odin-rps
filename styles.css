@@ -11,7 +11,7 @@ main {
     border: rgb(66, 105, 66);
     border-style: solid;
     border-radius: 12px;
-    padding: 12px;
+    padding: 0;
     margin: 12vh auto;
     display: flex;
     flex-direction: column;
@@ -21,5 +21,6 @@ main {
 
 h1 {
     background-color: grey;
-    flex: 1;
+    margin: 0;
+    padding:16px 32px;
 }
