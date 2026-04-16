@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+
 body {
     background-color: rgb(32, 32, 32);
     display: flex;
     flex-direction: column;
     align-items: center;
     color:white;
+    font-family: "Silkscreen", "Roboto", sans-serif;
 }
 
 main {
@@ -33,4 +36,6 @@ h1 {
 
 button {
     font-size: 32px;
+    font-family: "Silkscreen", "Roboto", sans-serif;
+    font-weight: 900;
 }
